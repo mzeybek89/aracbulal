@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h2(class='title') Arababulal.com
+    form(action="s", name='search-form' method='post')
+        div(class='search-box')
+            input(type='text', name='searchTerm', class='searchbox')
+            button(name="ara") Araba Ara
+
+
+
+    ul
+        each val in tags
+            li= val.tag
+
+
+    #{tags}
