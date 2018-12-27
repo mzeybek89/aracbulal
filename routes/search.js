@@ -15,10 +15,6 @@ router.post('/', function(req, res, next) {
 });
 
 
-router.get('/test',(req,res,next)=>{
-  res.end('This is a test page');
-});
-
 
 /* GET home page. */
 router.get('/:term?', function(req, res, next) {

@@ -18,4 +18,10 @@ router.get('/', function(req, res, next) {
 
 });
 
+
+router.get('/test',(req,res,next)=>{
+  res.json('This is a test page');
+});
+
+
 module.exports = router;
